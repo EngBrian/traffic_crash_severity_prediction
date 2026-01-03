@@ -39,7 +39,7 @@ Data preprocessing was implemented using scikit-learn Pipelines and a ColumnTran
 
 - Scaled using Min-Max Scaling
 
-- Categorical Features
+### Categorical Features
 
 - Missing values imputed using the most frequent value
 
