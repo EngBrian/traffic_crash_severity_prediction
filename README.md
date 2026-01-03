@@ -17,9 +17,9 @@ The model was developed using logistic regression and carefully designed to hand
 
 - Target Variable: FATAL_OR_SUSP_SERIOUS_INJ
 
-0 – No fatal or suspected serious injury
+     0 – No fatal or suspected serious injury
 
-1 – At least one fatal or suspected serious injury
+     1 – At least one fatal or suspected serious injury
 
 - A detailed explanation of all features is provided in:
 
@@ -85,19 +85,19 @@ Data preprocessing was implemented using scikit-learn Pipelines and a ColumnTran
 
 - In simple terms, it measures:
 
-How many serious crashes the model correctly identifies, and
+   How many serious crashes the model correctly identifies, and
 
-How often it avoids incorrectly labeling non-serious crashes as severe
+   How often it avoids incorrectly labeling non-serious crashes as severe
 
 - This balance is important because:
 
-Missing a serious crash can have serious real-world consequences
+   Missing a serious crash can have serious real-world consequences
 
-Predicting too many false severe crashes can reduce trust in the model
+   Predicting too many false severe crashes can reduce trust in the model
 
 - The F1-score ensures the model remains both sensitive to dangerous crashes and reasonable in its predictions.
 
-Optimized Model Results
+##### Optimized Model Results
 Classification Report
               precision    recall  f1-score   support
 
@@ -116,13 +116,13 @@ Confusion Matrix
 
 - After applying SMOTE and hyperparameter tuning:
 
-The model correctly identified 5 out of 7 severe crashes
+   The model correctly identified 5 out of 7 severe crashes
 
-Only 2 severe crashes were missed
+   Only 2 severe crashes were missed
 
-Some non-severe crashes were incorrectly flagged as severe, which was an acceptable trade-off given the high cost of missing serious outcomes
+   Some non-severe crashes were incorrectly flagged as severe, which was an acceptable trade-off given the high cost of missing serious outcomes
 
-The F1-score for severe crashes improved to 0.37, demonstrating a meaningful improvement in the model’s ability to detect high-risk crashes compared to earlier versions.
+   The F1-score for severe crashes improved to 0.37, demonstrating a meaningful improvement in the model’s ability to detect high-risk crashes compared to earlier versions.
 
 ### Limitations
 
